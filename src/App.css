@@ -1,0 +1,78 @@
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    background-color: cornsilk;
+    height: max-content;
+}
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    background-color: cornsilk;
+    position: relative;
+    min-height: 100vh;
+}
+.header {
+    font-size: 2rem;
+    margin: 0;
+    behavior: slide;
+    color: #eb670f;
+}
+h4 {
+    text-decoration: underline;
+    color: cornsilk;
+}
+.markdown-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    height: 100%;
+    margin: 20px;
+    padding-bottom: 4rem;
+}
+textarea {
+    width: 100%;
+    height: 550px;
+    outline: none;
+    resize: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: cornsilk;
+}
+.editor-container {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: small;
+    background-color: #eb670f;
+    box-shadow: 2px 2px 5px gray;
+}
+#preview {
+    width: 100%;
+    height: 550px;
+    padding-left: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    background-color: cornsilk;
+    overflow-y: scroll;
+}
+.preview-container {
+    text-align: start;
+    padding: 10px;
+    font-size: small;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    background-color: #eb670f;
+    box-shadow: 2px 2px 5px gray;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
+    padding: 10px 25px;
+    text-align: end;
+    background-color: #eb670f;
+    color: cornsilk;
+}
