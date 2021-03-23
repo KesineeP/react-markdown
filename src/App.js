@@ -6,7 +6,7 @@ marked.setOptions({
     breaks: true
 });
 const renderer = new marked.Renderer();
-renderer.link = function (href, text) {
+renderer.link = function (href, title, text) {
     return `<a target="_blank" href="${href}">${text}` + '</a>';
 
 };
@@ -45,6 +45,7 @@ function App() {
 }
 
 const Preview = ({ markdown }) => {
+
     return <div id="preview" dangerouslySetInnerHTML={{
         __html: marked(markdown, { renderer: renderer })
     }} />
@@ -58,7 +59,7 @@ const placeholder = `# Welcome to my React Markdown Previewer!
 ## This is a sub-heading...
 ### And here's some other cool stuff:
 
-Heres some code, \`<div></div>\`, between 2 backticks.
+Heres some code, \`<div></div>\`, between 2 back-ticks.
 
 \`\`\`
 // this is multi-line code:
@@ -91,7 +92,7 @@ And here. | Okay. | I think we get it.
         - That look like this.
 
 
-1. And there are numbererd lists too.
+1. And there are number lists too.
 1. Use just 1s if you want!
 1. And last but not least, let's not forget embedded images:
 
